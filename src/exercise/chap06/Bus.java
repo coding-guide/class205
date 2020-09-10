@@ -10,7 +10,14 @@ public class Bus {
 	}
 	
 	public void pickUpPerson(int money) {
-		
+		this.money = this.money + money;
+		passengerCount++;
 	}
 
+	@Override
+	public String toString() {
+		return "Bus [busNumber=" + busNumber + ", passengerCount=" + passengerCount + ", money=" + money + "]";
+	}
+
+	
 }

@@ -33,16 +33,16 @@ public class Person {
 	
 	public void takeSubway(Subway subway) {
 		if(this.age>=19) {
-			if(this.money>=1300) {
-				subway.pickUpPerson(1300);
-				this.money = this.money - 1300; // money -= 1300;
+			if(this.money>=1250) {
+				subway.pickUpPerson(1250);
+				this.money = this.money - 1250; // money -= 1250;
 			}else {
 				System.out.println("요금이 부족합니다.");
 			}//if 요금
 		}else {
-			if(this.money>=1000) {
-				subway.pickUpPerson(1000);
-				this.money = this.money - 1000; // money -= 1000;
+			if(this.money>=720) {
+				subway.pickUpPerson(720);
+				this.money = this.money - 720; // money -= 720;
 			}else {
 				System.out.println("요금이 부족합니다.");
 			}//if 요금

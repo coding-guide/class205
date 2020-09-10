@@ -10,7 +10,15 @@ public class Subway {
 	}
 	
 	public void pickUpPerson(int money) {
-		
+		this.money = this.money+money;
+		passenerCount++;
 	}
+
+	@Override
+	public String toString() {
+		return "Subway [lineNumber=" + lineNumber + ", passenerCount=" + passenerCount + ", money=" + money + "]";
+	}
+	
+	
 
 }
