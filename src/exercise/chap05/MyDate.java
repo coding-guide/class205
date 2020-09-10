@@ -20,9 +20,9 @@ public class MyDate {
 //		this.day = day;
 //		this.month = month;
 //		this.year = year;
-		setDay(day);
-		setMonth(month);
 		setYear(year);
+		setMonth(month);
+		setDay(day);
 				
 	}//MyDate(day,month,year)
 	
@@ -32,7 +32,7 @@ public class MyDate {
 	
 	public void setDay(int day) {
 		this.day = day;
-		switch(month) {
+		switch(this.month) {
 		case 1: case 3: case 5: case 7: case 8: case 10: case 12:
 			if(day <1 || day >31) {
 				isValid = false;
@@ -59,6 +59,7 @@ public class MyDate {
 	}//getMonth()
 	
 	public void setMonth(int month) {
+		this.month = month;
 		if(month < 1 || month >12) {
 			isValid = false;
 		}
@@ -79,7 +80,12 @@ public class MyDate {
 
 	@Override
 	public String toString() {
-		return "MyDate [" + year + "년 " + month + "월 " + day + "일]";
+		if(isValid) {
+			return "MyDate [" + year + "년 " + month + "월 " + day + "일]";
+		}else {
+			
+			return "MyDate [" + year + "년 " + month + "월 " + day + "일] 유효하지 않은 날짜입니다.";
+		}
 	}
 	
 	
