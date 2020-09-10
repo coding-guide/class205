@@ -29,8 +29,6 @@ public class PersonTest {
 		System.out.println(bus);
 		System.out.println(subway);
 		System.out.println("----버스 3번, 전철 3번");
-		
-		
 	}
 
 }
