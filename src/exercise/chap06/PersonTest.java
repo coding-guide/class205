@@ -10,6 +10,22 @@ public class PersonTest {
 		Subway subway = new Subway("분당선");
 		System.out.println(subway);
 		
+		person.takeBus(bus);
+		person.takeBus(bus);
+		person.takeBus(bus);
+		person.takeBus(bus);
+		person.takeBus(bus);
+		System.out.println(person);
+		person.takeBus(bus);
+		person.takeBus(bus);
+		person.takeBus(bus);
+		person.takeBus(bus);
+		person.takeBus(bus);
+		System.out.println(person);
+		person.takeBus(bus);//11번째
+		System.out.println(person);
+		
+		
 	}
 
 }

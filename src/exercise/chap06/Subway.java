@@ -8,5 +8,9 @@ public class Subway {
 	public Subway(String lineNumber) {
 		this.lineNumber = lineNumber;
 	}
+	
+	public void pickUpPerson(int money) {
+		
+	}
 
 }
